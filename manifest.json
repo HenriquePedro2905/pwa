@@ -1,6 +1,6 @@
 {
     "name": "TarefasPWA",
-    "short_name": "PWA",
+    "short_name": "Tarefas_pwa",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#7747ff",
