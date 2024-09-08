@@ -104,16 +104,16 @@ header{
     max-width: 25px;
 }
 
+.modal .printTitle{
+    margin-top: 50px;
+    color: green;
+}
+
 .modal .print{
     font-size: 25px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
     margin: 10px;
 }
-
-.modal .printTitle{
-    color: green;
-}
-
 
 footer{
     left: 0;

@@ -1,28 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const formLogin = document.getElementById('login-form');
-    const formRegister = document.getElementById('registerForm');
-    const apiUrl = "http://localhost:8080";
+    const formLogin = document.getElementById('submit-btn');
 
     formLogin.addEventListener('click', (event) => {
         event.preventDefault();
 
         let modal = document.getElementById('modal');
 
-        const name = document.getElementById('name').value;
-        const city = document.getElementById('city').value
+        let name = document.getElementById('name').value;
+        let city = document.getElementById('city').value
         let namePrint = document.getElementById('namePrint');
         let cityPrint = document.getElementById('cityPrint');
 
         if(name !== "" && city !== ""){
-            namePrint.innerText = `seu nome:${name}`;
-            cityPrint.innerText = `sua cidade:${city}`;;
+            namePrint.innerText = `seu nome: ${name}`;
+            cityPrint.innerText = `sua cidade: ${city}`;;
             modal.showModal();
         }
     });
 });
 
 function fecharModal(){
+    let formLogin = document.getElementById('login-form');
     let modal = document.getElementById('modal');
 
-    modal.close()
+    modal.close();
+    formLogin.reset();
 }
