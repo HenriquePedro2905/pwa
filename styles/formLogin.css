@@ -106,6 +106,10 @@ header{
     margin: 10px;
 }
 
+.modal .printTitle{
+    color: green;
+}
+
 
 footer{
     left: 0;
