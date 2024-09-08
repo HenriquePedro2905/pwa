@@ -20,6 +20,14 @@
             </div>
             <form id="login-form">
                 <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                </div>
+                <div class="input-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" name="city" id="city" placeholder="Digite sua cidade">
+                </div>
+                <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu email">
                 </div>
@@ -35,29 +43,11 @@
             </div>
         </div>
 
-        <div class="register-container" id="registerContainer" style="display: none;">
-            <div class="register-header">
-                <h1>Registre-se</h1>
-                <p>Crie sua conta</p>
-            </div>
-            <form id="registerForm">
-                <div class="input-group">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="registerEmail" placeholder="Digite seu email">
-                </div>
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="registerPassword" placeholder="Digite sua senha">
-                </div>
-                <button type="submit" class="submit-btn">Registre-se</button>
-            </form>
-            <div class="login">
-                <p>ja tem uma conta? <a href="#" id="loginLink">Faça login aqui!</a></p>
-            </div>
+        <dialog id="modal" class="modal">
+            <h1>sucesso</h1>
+            <h3 id="namePrint" class="print"></h3>
+            <h3 id="cityPrint" class="print"></h3>
+        </dialog>
     </main>
     
     <footer>
@@ -66,7 +56,7 @@
             <a href="https://github.com/HenriquePedro2905">HenriquePedro2905</a>
         </div>
     </footer>
-    <script src="/js/Login.js"></script>
+    <script src="/js/main.js"></script>
     <script src="/js/FormsToggle.js"></script>
 </body>
 </html>
