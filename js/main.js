@@ -20,3 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function fecharModal(){
+    let modal = document.getElementById('modal');
+
+    modal.close()
+}

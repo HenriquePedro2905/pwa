@@ -6,10 +6,7 @@ self.addEventListener('install', event => {
                 '/',
                 '/manifest.json',
                 '/index.html',
-                '/styles/style.css',
                 '/styles/formLogin.css',
-                '/js/Login.js',
-                '/js/FormToggle.js',
                 '/js/main.js'
             ]).catch(err => {
                 console.error('Falha ao adicionar arquivos ao cache:', err);
