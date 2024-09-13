@@ -1,3 +1,5 @@
+//fazendo merge com a branch develop
+
 document.addEventListener('DOMContentLoaded', () => {
 
     if ('serviceWorker' in navigator) {
